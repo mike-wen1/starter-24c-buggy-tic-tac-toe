@@ -22,15 +22,15 @@ bool MakeMove(std::vector<std::vector<char>>& board,
               int row,
               int col,
               char player) {
-  if (row - 1 < 0 || row > kBoardSize || col - 1 < 0 || col > kBoardSize) {
+  if (row < 0 || row >= kBoardSize || col < 0 || col >= kBoardSize) {
     std::cerr << "Error: Move out of bounds!\n";
     return false;
   }
-  if (board[row - 1][col - 1] != ' ') {
+  if (board[row][col] != ' ') {
     std::cerr << "Error: Cell already occupied!\n";
     return false;
   }
-  board[row - 1][col - 1] = player;
+  board[row][col] = player;
   return true;
 }
 

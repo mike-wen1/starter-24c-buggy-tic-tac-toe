@@ -97,7 +97,8 @@
     "set": "cpp",
     "fstream": "cpp",
     "future": "cpp",
-    "iomanip": "cpp"
+    "iomanip": "cpp",
+    "complex": "cpp"
   },
   "C_Cpp_Runner.msvcBatchPath": "",
   "C_Cpp_Runner.cCompilerPath": "clang",
