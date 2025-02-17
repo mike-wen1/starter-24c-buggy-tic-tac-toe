@@ -71,7 +71,7 @@ bool IsBoardFull(const std::vector<std::vector<char>>& board) {
     }
   }
 
-  return CheckWinner(board) == ' ';
+  return true;
 }
 
 void SwitchPlayer(char& player) { player = (player == 'X') ? 'O' : 'X'; }
